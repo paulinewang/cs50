@@ -14,14 +14,14 @@ int main(void)
         height = get_int();
     }
     while (height < 0 || height > 23);
-    
-    for (int i = 0; i < height; i++) 
+
+    for (int i = 0; i < height; i++)
     {
-        for (spaces = (height - i - 2); spaces >= 0; spaces--) 
+        for (spaces = (height - i - 2); spaces >= 0; spaces--)
         {
             printf(" ");
-        } 
-        for (hashes = 0; hashes <= (i + 1); hashes++) 
+        }
+        for (hashes = 0; hashes <= (i + 1); hashes++)
         {
             printf("#");
         }
